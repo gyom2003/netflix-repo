@@ -132,10 +132,18 @@ function randomImg() {
         "/assets/2.jpg", 
         "/assets/3.png", 
         "/assets/4.jpg", 
-        "/assets/5.jpeg" 
+        "/assets/5.jpeg", 
+        "./assets/carouselimages/1.png", 
+        "./assets/carouselimages/2.jpg", 
+        "./assets/carouselimages/3.png", 
+        "./assets/carouselimages/4.jpg", 
+        "./assets/carouselimages/5.jpg"
     ]; 
-    
-    var rand = theimg[math.floor(math.random*theimg.length)];
-    
-    console.log(rand)   
+    for(let i = 0; i < 10; i++) {
+        var randomRef = theimg[math.floor(math.random*theimg.length)];   
+        console.log(randomRef); 
+        document.getElementById("random" + i.toString()).src=theimg[randomRef];
+    }  
 }
+
+window.onload = randomImg;
