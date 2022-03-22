@@ -62,3 +62,80 @@ function leftScroll3(carousel3, leftArrow3) {
 }
 
 
+//car4
+function rightScroll4(carousel4, rightArrow4) {
+    const scroll = document.querySelector(carousel4);
+    const right = document.querySelector(rightArrow4);
+    scroll.scrollLeft += scroll.offsetWidth;
+
+}
+
+function leftScroll4(carousel4, leftArrow4) {
+    const scroll = document.querySelector(carousel4);
+    const left = document.querySelector(leftArrow4);
+    scroll.scrollLeft -= scroll.offsetWidth;
+
+}
+
+//car5
+function rightScroll5(carousel5, rightArrow5) {
+    const scroll = document.querySelector(carousel5);
+    const right = document.querySelector(rightArrow5);
+    scroll.scrollLeft += scroll.offsetWidth;
+
+}
+
+function leftScroll5(carousel5, leftArrow5) {
+    const scroll = document.querySelector(carousel5);
+    const left = document.querySelector(leftArrow5);
+    scroll.scrollLeft -= scroll.offsetWidth;
+
+}
+
+
+// window.onload = RandomImage1
+
+// var type = document.getElementsByTagName("img")
+
+
+// function RandomImage1(){
+//     let index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random11').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random12').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random13').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random14').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random15').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random16').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random17').src = image_array1[index];
+
+//     index = Math.floor(Math.random().image_array1.length)
+//     document.querySelector('.random18').src = image_array1[index];
+// }
+
+
+function randomImg() {
+    theimg = [
+
+        "/assets/1.webp", 
+        "/assets/2.jpg", 
+        "/assets/3.png", 
+        "/assets/4.jpg", 
+        "/assets/5.jpeg" 
+    ]; 
+    
+    var rand = theimg[math.floor(math.random*theimg.length)];
+    
+    console.log(rand)   
+}
