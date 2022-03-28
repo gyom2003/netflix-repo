@@ -92,7 +92,88 @@ function leftScroll5(carousel5, leftArrow5) {
 
 }
 
+//car6
+function rightScroll6(carouse6, rightArrow6) {
+    const scroll = document.querySelector(carouse6);
+    const right = document.querySelector(rightArrow6);
+    scroll.scrollLeft += scroll.offsetWidth;
 
+}
+
+function leftScroll6(carousel6, leftArrow6) {
+    const scroll = document.querySelector(carousel6);
+    const left = document.querySelector(leftArrow6);
+    scroll.scrollLeft -= scroll.offsetWidth;
+
+}
+
+//car7
+function rightScroll7(carouse7, rightArrow7) {
+    const scroll = document.querySelector(carouse7);
+    const right = document.querySelector(rightArrow7);
+    scroll.scrollLeft += scroll.offsetWidth;
+
+}
+
+function leftScroll7(carousel7, leftArrow7) {
+    const scroll = document.querySelector(carousel7);
+    const left = document.querySelector(leftArrow7);
+    scroll.scrollLeft -= scroll.offsetWidth;
+
+}
+
+//car8
+function rightScroll8(carousel8, rightArrow8) {
+    const scroll = document.querySelector(carousel8);
+    const right = document.querySelector(rightArrow8);
+    scroll.scrollLeft += scroll.offsetWidth;
+}
+
+function leftScroll8(carousel8, leftArrow8) {
+    const scroll = document.querySelector(carousel8);
+    const left = document.querySelector(leftArrow8);
+    scroll.scrollLeft -= scroll.offsetWidth;
+}
+
+//car9
+function rightScroll9(carousel9, rightArrow9) {
+    const scroll = document.querySelector(carousel9);
+    const right = document.querySelector(rightArrow9);
+    scroll.scrollLeft += scroll.offsetWidth;
+}
+
+function leftScroll9(carousel9, leftArrow9) {
+    const scroll = document.querySelector(carousel9);
+    const left = document.querySelector(leftArrow9);
+    scroll.scrollLeft -= scroll.offsetWidth;
+}
+
+
+//car10
+function rightScroll10(carousel10, rightArrow10) {
+    const scroll = document.querySelector(carousel10);
+    const right = document.querySelector(rightArrow10);
+    scroll.scrollLeft += scroll.offsetWidth;
+}
+
+function leftScroll10(carousel10, leftArrow10) {
+    const scroll = document.querySelector(carousel10);
+    const left = document.querySelector(leftArrow10);
+    scroll.scrollLeft -= scroll.offsetWidth;
+}
+
+//car11
+function rightScroll11(carousel11, rightArrow11) {
+    const scroll = document.querySelector(carousel11);
+    const right = document.querySelector(rightArrow11);
+    scroll.scrollLeft += scroll.offsetWidth;
+}
+
+function leftScroll11(carousel11, leftArrow11) {
+    const scroll = document.querySelector(carousel11);
+    const left = document.querySelector(leftArrow11);
+    scroll.scrollLeft -= scroll.offsetWidth;
+}
 // window.onload = RandomImage1
 
 // var type = document.getElementsByTagName("img")
@@ -142,8 +223,15 @@ function randomImg() {
     for(let i = 0; i < 10; i++) {
         var randomRef = theimg[math.floor(math.random*theimg.length)];   
         console.log(randomRef); 
-        document.getElementById("random" + i.toString()).src=theimg[randomRef];
+        var result = theimg[randomRef].toString();
+        console.log(result);
+        document.getElementById("random" + i.toString()).src=result;
     }  
 }
 
-window.onload = randomImg;
+window.onload = randomImg();
+
+function settheVideo() {
+    document.getElementById("thevideo").src="./assets/video.mp4"
+
+}
