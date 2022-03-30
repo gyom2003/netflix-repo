@@ -207,7 +207,7 @@ function leftScroll11(carousel11, leftArrow11) {
 
 
 function randomImg() {
-    theimg = [
+    theimg = [ 
 
         "/assets/1.webp", 
         "/assets/2.jpg", 
@@ -221,15 +221,15 @@ function randomImg() {
         "./assets/carouselimages/5.jpg"
     ]; 
     for(let i = 0; i < 10; i++) {
-        var randomRef = theimg[math.floor(math.random*theimg.length)];   
-        console.log(randomRef); 
-        var result = theimg[randomRef].toString();
-        console.log(result);
-        document.getElementById("random" + i.toString()).src=result;
+        var randomRef = Math.floor(Math.floor(math.random*theimg.length));   
+        document.getElementById("random" + i.toString()).src = theimg(randomRef);
+        // console.log(randomRef); 
+        // var result = theimg[randomRef].toString();
+        // console.log(result);
     }  
 }
 
-window.onload = randomImg();
+window.onload = randomImg;
 
 function settheVideo() {
     document.getElementById("thevideo").src="./assets/video.mp4"
