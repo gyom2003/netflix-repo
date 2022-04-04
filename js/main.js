@@ -23,7 +23,6 @@ function rightScroll(carousel, rightArrow) {
     const scroll = document.querySelector(carousel);
     const right = document.querySelector(rightArrow);
     scroll.scrollLeft += scroll.offsetWidth;
-
 }
 
 function leftScroll(carousel, leftArrow) {
@@ -234,4 +233,34 @@ window.onload = randomImg;
 function settheVideo() {
     document.getElementById("thevideo").src="./assets/video.mp4"
 
+}
+
+// function &a_hover(){
+//     var logo = document.querySelector('.logo')
+//     logo.addEventListener('mouseenter', function(){
+//         alert("Tu as hover le logo!")
+//     })
+// }
+
+
+// window.onload = function(){
+//     logo_hover();
+// }
+
+function secondhover(){
+    var avatar_hover = document.querySelector('.second-hover')
+    avatar_hover.style.display = "unset"
+}
+function secondunhover() {
+    var avatar_hover = document.querySelector('.second-hover')
+    avatar_hover.style.display = "none"
+}
+
+function hover() {
+    var avatar_hover = document.querySelector('.avatar_hover')
+    avatar_hover.style.display = "unset"
+}
+function unhover(){
+    var avatar_hover = document.querySelector('.avatar_hover')
+    avatar_hover.style.display = "none"
 }

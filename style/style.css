@@ -3,3 +3,6 @@ main section div div::-webkit-scrollbar {
     display: none;
 }
 
+div.thedivref::-webkit-file-upload-button {
+    display: none;
+}
